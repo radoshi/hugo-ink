@@ -430,6 +430,11 @@ ul {
     text-align: right;
 }
 
+.homepage-content {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2em;
+}
+
 @media (max-width: 900px) {
     body {
         padding: 20px;
