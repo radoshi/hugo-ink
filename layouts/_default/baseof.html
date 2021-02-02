@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html {{- if (eq .Site.Params.mode "dark") -}} class="dark" {{ end }}>
 
-{{ partial "header.html" . }}
+{{ partial "head.html" . }}
 
-<body {{- if (eq .Site.Params.mode "dark") -}} class="dark" {{ end }}>
-	<div class="container wrapper">
-		{{ partial "head.html" . }}
+<body>
+    <div class="container wrapper">
+        {{ partial "header.html" . }}
 
         {{ block "main" . }}
         {{ end }}
